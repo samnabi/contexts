@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CONTEXTS</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+				<section>
+
+					<section>
+						<h1>Contexts</h1>
+						<p>Software Architecture in the Real World</p>
+						<p><strong>Sam Nabi / @samnabi</strong></p>
+					</section>
+
+					<section>
+						<img src="img/cards.gif">
+					</section>
+
+					<section class="left">
+						<h2>User environments</h2>
+						<h2>User impacts</h2>
+						<h2>Business models</h2>
+						<h2>Other software</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Context 1</h2>
+						<h1>User environments</h1>
+					</section>
+
+					<section>
+						<h1>You have no control over the network</h1>
+						<p>Anticipate connectvity issues</p>
+					</section>
+
+					<section>
+						<img src="img/cell-reception.jpg">
+					</section>
+
+					<section>
+						<p><code><a href="http://hood.ie">hood.ie</a></code></p>
+						<img src="img/hoodie.png">
+					</section>
+
+					<section>
+						<p><code><a href="http://getshine.com">getshine.com</a></code></p>
+						<img src="img/shine.png">
+					</section>
+
+					<section>
+						<h2>You have no control over the device</h2>
+						<table class="center">
+							<col >
+							<tr>
+								<td><img src="img/apple-watch.png"></td>
+								<td><img src="img/samsung-uhd.jpg"></td>
+								<td><img src="img/oculus.png"></td>
+							</tr>
+							<tr>
+								<td>312 x 390</td>
+								<td>3840 x 2160</td>
+								<td>2160 x 1200</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h2>Internet of Things</h2>
+						<img src="img/iot-fridge.png">
+						<img src="img/iot-fridge-2.png">
+						<!-- Physical context. Walking, driving? -->
+					</section>
+
+					<section>
+						<h2>In-app browsers</h2>
+						<img src="img/cat-wheel.gif">
+					</section>
+
+					<section>
+						<img src="img/android.gif">
+					</section>
+
+					<section>
+						<h2>Progressive enhancement</h2>
+						<table class="center">
+							<tr>
+								<td><img src="img/pokemon-1.gif"></td>
+								<td><img src="img/pokemon-2.gif"></td>
+							</tr>							
+						</table>
+					</section>
+
+					<section>
+						<h2>Ability</h2>
+						<p>Users may manipulate your software at the OS or browser level (zoom, colour, font)</p>
+						<table>
+							<tr>
+								<td>Colour-blindness</td>
+								<td>
+									8% Men<br>
+									0.5% Women<br>
+									<small>* Of Northern European ancestry.<br><a href="https://nei.nih.gov/health/color_blindness/facts_about">USA National Institutes of Health</a></small>	
+								</td>
+							</tr>
+							<tr>
+								<td>Dyslexia</td>
+								<td>
+									2-3%<br>
+									<small><a href="http://www.statcan.gc.ca/pub/89-628-x/2009014/tab/tab1-eng.htm">StatCan Publication No. 89-628-X</a></small>
+								</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h2>Context 1: User environments</h2>
+						<p>Questions?</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Context 2</h2>
+						<h1>User impacts</h1>
+					</section>
+
+					<section>
+						<h2>"People aren't edge cases"</h2>
+						<p>&mdash; Carina C. Zona, <em><a href="https://vimeo.com/80375707#t=10m12s">Schemas for the real world</a></em></p>
+
+						<table class="center">
+							<tr>
+								<td>
+									<a href="https://t.co/fzLc3DaBQH"><img src="img/namefail.jpg"></a>
+								</td>
+								<td>
+									<img src="img/garciamarquez.jpg">
+								</td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<img src="img/googlephotosgorillas.jpg">
+					</section>
+
+					<section>
+						<p class="left">"Artificial intelligence expert Vivienne Ming said machine-learning systems often reflect biases in the real world. Some systems struggle to recognize non-white people because <strong>they were trained on Internet images which are overwhelmingly white</strong>, she explained."</p>
+						<p class="left"><a href="http://blogs.wsj.com/digits/2015/07/01/google-mistakenly-tags-black-people-as-gorillas-showing-limits-of-algorithms/">http://blogs.wsj.com/digits/2015/07/01/google-mistakenly-tags-black-people-as-gorillas-showing-limits-of-algorithms/</a></p>
+					</section>
+
+					<section>
+						<h2>Social tools, social responsibility</h2>
+						<table class="center">
+							<tr>
+								<td><a href="http://www.theverge.com/2015/2/4/7982099/twitter-ceo-sent-memo-taking-personal-responsibility-for-the"><img src="img/twitter-harassment.png"></a></td>
+								<td><a href="http://meta.stackexchange.com/questions/17198/why-does-my-reputation-decrease-if-i-downvote-another-post"><img src="img/stackexchange-downvotes.png"></a></td>
+								<td><a href="https://cs.stanford.edu/people/jure/pubs/disqus-icwsm14.pdf"><img src="img/cornell-study.png"></a></td>
+							</tr>
+						</table>
+					</section>
+
+					<section>
+						<h2>Inclusive spaces</h2>
+						<h3>Blocking, muting, reporting, content control, accessibility</h3>
+						<p>"Blocking functionality must be part of any social network’s minimum viable product. Because without a block button, social networks are essentially unusable — not viable — for many marginalized people." &mdash; <a href="https://twitter.com/DuaneOBrien/status/633472262255996929">Eva Gantz</a></p>
+					</section>
+
+					<section>
+						<h2>Real-life conequences</h2>
+						<img src="img/ashe.png">
+					</section>
+
+					<section>
+						<h2>Even algorithms can harass people</h2>
+						<img src="img/zoequinn.png">
+					</section>
+
+					<section>
+						<h2>Context 2: User impacts</h2>
+						<p>Questions?</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Context 3</h2>
+						<h1>Business Models</h1>
+					</section>
+
+					<section>
+						<p><a href="https://dribbble.com/shots/1433198-Zuck-Dawg-making-it-rain">via R A D I O on Dribbble</a></p>
+						<img src="img/mark-and-john.gif">
+					</section>
+
+					<section class="left">
+						<h2>Growth</h2>
+						<h2>Acquisition</h2>
+						<h2>Abandonment</h2>
+					</section>
+
+					<section>
+						<p><code><a href="http://ourincrediblejourney.tumblr.com/">ourincrediblejourney.tumblr.com/</a></code></p>
+						<img src="img/rdio.png">
+					</section>
+
+					<section>
+						<p><code><a href="http://ourincrediblejourney.tumblr.com/">ourincrediblejourney.tumblr.com/</a></code></p>
+						<img src="img/mailbox.png">
+					</section>
+
+					<section>
+						<img src="img/disrupt.gif">
+					</section>
+
+					<section>
+						<a href="http://www.thehappystartupschool.com/blog/2015/11/30/reconsider-a-guest-post-by-dhh-founder-cto-of-basecamp"><img src="img/unicorn.png"></a>
+					</section>
+
+					<section>
+						<p><code><a href="http://vimbly.com">vimbly.com</a></code></p>
+						<img src="img/vimbly.png">
+					</section>
+
+					<section>
+						<h2 class="left">What's your business stack?</h2>
+						<p class="left">Cloud services</p>
+						<p class="left">APIs</p>
+						<p class="left">App store requirements</p>
+					</section>
+
+					<section>
+						<h2>Context 3: Business Models</h2>
+						<p>Questions?</p>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h2>Context 4<h2>
+						<h1>Other software</h1>
+					</section>
+
+					<section>
+						<table>
+						<tr>
+							<td><img src="img/ea.png">
+								<p><small><a href="http://www.digitaltrends.com/gaming/ea-removes-ios-classics-from-app-store/">EA removes two dozen apps just before iOS 9 launch</a></small></p></td>
+							<td><img src="img/app-ocalypse.png"></td>
+						</tr>
+						</table>
+					</section>
+
+					<section>
+						<img src="img/xkcd.png">
+					</section>
+
+					<section>
+						<p><code><a href="https://dev.windows.com/en-us/develop/build-apps-shared-code">Windows Universal Apps</a></code></p>
+						<img src="img/windows-uwa.png">
+					</section>
+
+					<section>
+						<p><code><a href="https://crosswalk-project.org/">crosswalk-project.org</a></code></p>
+						<img src="img/crosswalk.png">
+					</section>
+
+					<section>
+						<p><code><a href="http://electron.atom.io/">electron.atom.io</a> / <a href="http://photonkit.com/">photonkit.com</a></code></p>
+						<img src="img/electron.png">
+					</section>
+
+					<section>
+						<h2>Google Reader alternatives</h2>
+						<img src="img/minimalreader.png">
+					</section>
+
+					<section>
+						<h2>Terrible cloud overkill</h2>
+						<a href="https://vimeo.com/147806338#t=46m26s"><img src="img/maciej.png"></a>
+						<p>Maciej Ceglowski - The Website Obesity Crisis</p>
+					</section>
+
+					<section>
+						<h2>Twitter Still supports SMS</h2>
+						<img src="img/twitter.png">
+					</section>
+
+					<section>
+						<h2>Context 4: Other software</h2>
+						<p>Questions?</p>
+					</section>
+				</section>
+
+				<section>
+					<h1>Thanks</h1>
+					<p class="left">Email: sam@samnabi.com</p>
+					<p class="left">Twitter: @samnabi</p>
+					<p class="left">Github: samnabi</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
